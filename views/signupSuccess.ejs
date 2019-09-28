@@ -1,0 +1,41 @@
+<% include ./partials/headNotUser %>
+
+<div id="signSuccess"></div>
+
+<section id="cover">
+
+    <div id="cover-caption">
+        <div id="container" class="container">
+            <div class="row ">
+                <div class="col-sm-6 offset-sm-3 text-center">
+                    <h1 class="display-4">Login</h1>
+                    <div class="info-form">
+                        <form action = "/login" method = "POST" class="form-inlin justify-content-center">
+                            <div class="form-group">
+                                <label class="sr-only">Name</label>
+                                <input class = "form-control" type = "text" id = "loginInput" name = "loginUN" placeholder = "username" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="sr-only">Email</label>
+                                 <input class = "form-control" type = "password" id = "passwordInput"  name = "loginPW" placeholder = "password" required>
+                            </div> 
+                            <button type="submit" class="btn btn-danger "><i class="fas fa-users"></i> Login </button>
+                        </form>
+                    </div>
+                    <br>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class = "pizza-image">
+        
+    </div>
+</section>
+
+<script>
+    alert("Signup Successful!");
+    document.getElementById("signSuccess");
+</script>
+<% include ./partials/footer %>
